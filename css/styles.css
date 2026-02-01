@@ -705,6 +705,7 @@ form[name="contact-form"] {
 
 /* Поля формы */
 .form-field {
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -726,7 +727,7 @@ form[name="contact-form"] {
   padding: 18px 24px;
   font-size: 15px;
   color: #ffffff;
-  background: transparent;
+  background-color: transparent;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50px;
   transition: all 0.3s ease;
@@ -945,7 +946,7 @@ nav ul:last-child img:hover {
   background-color: rgba(1, 31, 74, 0.4);
   padding: 20px 0;
   transition: opacity 0.3s, visibility 0.3s;
-  z-index: 99;
+
 }
 
 .backdrop.is-hidden {
@@ -954,10 +955,13 @@ nav ul:last-child img:hover {
   pointer-events: none;
 }
 
+
+
 .modal {
   position: relative;
   width: 100%;
   max-width: 723px;
+  height: 100%;
   max-height: 90vh;
   background-color: var(--color-primary-dark);
   border-radius: 48px;
@@ -1000,6 +1004,17 @@ nav ul:last-child img:hover {
   font-family: 'Roboto', sans-serif;
 }
 
+.form-contact-form {
+  max-width: 322px;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-primary-light);
+  line-height: 1.3;
+  margin: 0 auto;
+ padding-bottom: 32px;
+  text-align: center;
+}
+
 .modal form {
   width: 100%;
   max-width: 400px;
@@ -1016,7 +1031,7 @@ nav ul:last-child img:hover {
   width: 100%;
 }
 
-
+/* form modal */
 
 .form-label {
   display: block;
@@ -1063,16 +1078,25 @@ nav ul:last-child img:hover {
   opacity: 0.7;
 }
 
+.button-form {
+  background-color: var(--color-primary-blue);
+  color: var(--color-primary-light);
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 32px;
+  cursor: pointer;
+}
 
 
-.contact .form-terms {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
+.form-terms {
+
   font-size: 11px;
-  line-height: 1.4;
+  color: var(--color-secondary-light);
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  margin: 8px 0 0;
+  line-height: 1.8;
 }
 
 .contact .form-terms-link {
