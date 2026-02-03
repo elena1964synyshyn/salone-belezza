@@ -77,11 +77,12 @@ body {
 body {
   background-image: url('../images/background-beaty-zone.png');
   background-position: center 1400px;
-
-
   background-repeat: no-repeat;
+  background-size: 100% auto;
   margin: 0;
+
 }
+
 
 h1,
 h2,
@@ -117,7 +118,7 @@ ul {
 }
 
 .section {
-  padding: 48px 0;
+  padding: 96px 0;
 }
 
 .container {
@@ -135,8 +136,13 @@ ul {
   z-index: 100;
 }
 
+
+
+
 .header-container {
-  background-color: transparent;
+  /* background-color: transparent; */
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
 
   display: flex;
   align-items: center;
@@ -180,6 +186,7 @@ ul {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500px;
+  transition: color 0.3s ease;
 
 }
 
@@ -340,8 +347,13 @@ nav ul:last-child img:hover {
   border-radius: 50%;
 }
 
+.about-img-women-1 {
+  margin-left: 170px;
+
+}
+
 .about-img-women {
-  margin-left: 204px;
+  margin-left: 390px;
 }
 
 .about-call {
@@ -396,20 +408,20 @@ nav ul:last-child img:hover {
 
 .star-1 {
   position: absolute;
-  top: -305px;
-  right: 178px;
+  top: -320px;
+  right: -18px;
 }
 
 .star-2 {
   position: absolute;
   top: -654px;
-  right: -309px;
+  right: -371px;
 }
 
 .star-3 {
   position: absolute;
-  top: -394px;
-  right: -265px;
+  top: -446px;
+  right: -320px;
 }
 
 
@@ -534,6 +546,11 @@ nav ul:last-child img:hover {
   border-radius: 120px 4px 120px 4px;
   position: relative;
   z-index: 2;
+}
+
+.procedures-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .procedures-card::before {
@@ -926,6 +943,8 @@ nav ul:last-child img:hover {
   transition: color 0.3s ease;
   display: inline-block;
 }
+
+
 
 .footer .address-link:hover {
   color: var(--color-primary-blue);
