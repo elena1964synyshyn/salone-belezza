@@ -535,6 +535,10 @@ nav ul:last-child img:hover {
 
 /* section-procedures */
 
+.section-procedures {
+  padding-top: 96px;
+}
+
 .procedures-list {
   display: flex;
   gap: 16px;
@@ -570,6 +574,7 @@ nav ul:last-child img:hover {
   display: flex;
   align-items: center;
   gap: 20px;
+
 }
 
 .carousel-button {
