@@ -76,7 +76,7 @@ body {
 
 body {
   background-image: url('../images/background-beaty-zone.png');
-  background-position: center 1400px;
+  background-position: center 1440px;
   background-repeat: no-repeat;
   background-size: 100% auto;
   margin: 0;
@@ -254,6 +254,7 @@ nav ul:last-child img:hover {
   line-height: 1.2;
   text-align: left;
   margin-bottom: 16px;
+  margin-left: 10px;
 }
 
 .hero-text {
@@ -736,7 +737,7 @@ nav ul:last-child img:hover {
   display: flex;
   flex-direction: column;
   width: 420px;
-  max-width: ;
+
   justify-content: center;
   padding: 50px 40px;
   background: var(--color-primary-dark);
