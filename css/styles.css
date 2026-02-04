@@ -132,17 +132,18 @@ ul {
   top: 0;
   left: 0;
   right: 0;
-
+  width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
   z-index: 100;
+
 }
 
 
 
 
+
 .header-container {
-  /* background-color: transparent; */
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(5px);
 
   display: flex;
   align-items: center;
@@ -151,7 +152,7 @@ ul {
 
 .header-nav {
 
-  padding: 42px 0;
+  padding: 32px 0;
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -237,6 +238,7 @@ nav ul:last-child img:hover {
 
 
 .container-hero {
+
   flex-direction: column;
   align-items: center;
   padding-left: 106px;
@@ -279,7 +281,7 @@ nav ul:last-child img:hover {
   padding-top: 14px;
   line-height: 1.3;
   color: var(--color-secondary-light);
-
+  margin-left: 10px;
   align-items: center;
   font-weight: 400;
 
@@ -329,7 +331,8 @@ nav ul:last-child img:hover {
 .about-call-content {
   display: flex;
   flex-direction: column;
-  max-width: 570px;
+  max-width: 683px;
+  margin-top: 40px;
 
 }
 
@@ -348,12 +351,12 @@ nav ul:last-child img:hover {
 }
 
 .about-img-women-1 {
-  margin-left: 170px;
+  margin-left: 16px;
 
 }
 
 .about-img-women {
-  margin-left: 390px;
+  margin-left: 192px;
 }
 
 .about-call {
@@ -367,6 +370,7 @@ nav ul:last-child img:hover {
 .about-call-about {
   font-size: 64px;
   line-height: 1.2;
+
 }
 
 
@@ -409,19 +413,19 @@ nav ul:last-child img:hover {
 .star-1 {
   position: absolute;
   top: -320px;
-  right: -18px;
+  right: 120px;
 }
 
 .star-2 {
   position: absolute;
   top: -654px;
-  right: -371px;
+  right: -221px;
 }
 
 .star-3 {
   position: absolute;
   top: -446px;
-  right: -320px;
+  right: -186px;
 }
 
 
@@ -670,7 +674,7 @@ nav ul:last-child img:hover {
 }
 
 .about-call {
-  margin-top: 40px;
+
   text-align: center;
 }
 
@@ -722,14 +726,17 @@ nav ul:last-child img:hover {
   gap: 40px;
   align-items: stretch;
   justify-content: center;
-
-
-
   margin: 0 auto;
 }
 
+
+
+
 .contact {
+  display: flex;
+  flex-direction: column;
   width: 420px;
+  max-width: ;
   justify-content: center;
   padding: 50px 40px;
   background: var(--color-primary-dark);
@@ -759,7 +766,7 @@ nav ul:last-child img:hover {
 
 /* Заголовок формы */
 .contact-form-contact {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .form-contact {
@@ -777,11 +784,13 @@ nav ul:last-child img:hover {
 
 /* Поля формы */
 .form-field {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
-  gap: 0;
+  width: 100%;
 }
+
+
 
 .form-label {
   position: absolute;
@@ -1117,7 +1126,7 @@ nav ul:last-child img:hover {
 .form-input {
   padding: 18px 32px;
   width: 100%;
-  max-width: 310px;
+
   border: 2px solid var(--color-secondary-light);
   border-radius: 32px;
   background-color: transparent;
