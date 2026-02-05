@@ -135,7 +135,7 @@ ul {
   width: 100%;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
-  z-index: 100;
+  z-index: 101;
 
 }
 
@@ -988,6 +988,7 @@ nav ul:last-child img:hover {
 .address-social-icon {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   padding: 0;
   cursor: pointer;
@@ -1054,7 +1055,7 @@ nav ul:last-child img:hover {
   right: 24px;
   width: 32px;
   height: 32px;
-  background: var(--color-primary-light);
+  background: var(--color-primary-dark);
   border: none;
   cursor: pointer;
   fill: var(--color-primary-light);
@@ -1167,6 +1168,8 @@ nav ul:last-child img:hover {
   margin: 0 auto 8px;
   display: block;
 }
+
+
 
 
 .form-terms {
