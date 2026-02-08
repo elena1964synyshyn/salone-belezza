@@ -2,11 +2,7 @@
   padding-top: 96px;
 }
 
-.procedures-list {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
+ 
 
 .procedures-card {
   overflow: hidden;
@@ -44,6 +40,8 @@
 }
 .procedures-list {
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   gap: 20px;
   overflow: hidden;
   flex: 1;
@@ -64,9 +62,4 @@
 
 .format-item {
   flex-basis: calc((100% - 32px) / 3);
-}
-.procedures-list {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
 }

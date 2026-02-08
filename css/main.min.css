@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-display: swap;
   font-family: "Play";
   font-style: normal;
@@ -1132,7 +1132,7 @@ nav ul:last-child img:hover {
   width: 1px;
   height: 1px;
   overflow: hidden
-}
+} */
 
 /*# sourceMappingURL=main.min.css.map */
 @font-face {
@@ -1182,6 +1182,64 @@ nav ul:last-child img:hover {
   --color-secondary-dark: #4a4a4a;
   --color-secondary-light: #747272;
   --color-unique-black: #000000
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-top: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-primary-dark);
+
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+body {
+  background-image: url('../images/background-beaty-zone.png');
+  background-position: center 1440px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Play', sans-serif;
+}
+
+a {
+  display: inline-block;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .header {
@@ -1564,14 +1622,7 @@ nav ul:last-child img:hover {
   padding-top: 96px
 }
 
-.procedures-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 16px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap
-}
+
 
 .procedures-card {
   overflow: hidden;
@@ -1705,15 +1756,7 @@ nav ul:last-child img:hover {
   text-align: center
 }
 
-.procedures-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 32px
-}
+
 
 .address-link {
   color: var(--color-primary-light);
