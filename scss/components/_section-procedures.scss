@@ -1,0 +1,72 @@
+.section-procedures {
+  padding-top: 96px;
+}
+
+.procedures-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.procedures-card {
+  overflow: hidden;
+  border-radius: 120px 4px 120px 4px;
+  position: relative;
+  z-index: 2;
+}
+
+.procedures-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.procedures-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    #011c44 101.39%
+  );
+}
+
+.procedures-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.procedures-list {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.about-text-procedures {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-primary-light);
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.format-item {
+  flex-basis: calc((100% - 32px) / 3);
+}
+.procedures-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}

@@ -1,0 +1,33 @@
+.section-why-us-section {
+  padding-top: 222px;
+}
+
+.call-card-blok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
+.call-card {
+  font-family: Roboto, sans-serif;
+  color: var(--color-unico-black);
+  padding-top: 8px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.about-call-blok {
+  background-color: var(--color-primary-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  max-width: 316px;
+  max-height: 181px;
+  border-radius: 32px;
+  box-shadow: 0px 4px 4px 0 #a8c6f561;
+}

@@ -1,0 +1,117 @@
+.footer-nav,
+.footer-address {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer {
+  padding: 56px 0;
+  position: relative;
+  background-image: url(../images/background.png);
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::before {
+  content: '';
+  background-image: url('../images/beauty-product.png');
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 247px;
+  height: 152px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.footer-container {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.link-footer {
+  padding: 0 0 16px 0;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.address-list,
+.address-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link-footer {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.link-footer:hover {
+  color: var(--color-primary-blue);
+}
+
+.footer .address-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.footer .address-link:hover {
+  color: var(--color-primary-blue);
+}
+
+.footer .address-copyright {
+  color: var(--color-secondary-light);
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul:last-child img {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+nav ul:last-child img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.address-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.address-social {
+  stroke: var(--color-primary-light);
+  transition: stroke 0.3s ease;
+}
+
+.address-social-icon:hover .address-social {
+  stroke: var(--color-primary-blue);
+}

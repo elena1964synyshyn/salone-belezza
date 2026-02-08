@@ -1,0 +1,9 @@
+nav ul:last-child img {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+nav ul:last-child img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
