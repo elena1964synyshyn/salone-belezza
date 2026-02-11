@@ -7,3 +7,13 @@ nav ul:last-child img:hover {
   opacity: 1;
   transform: scale(1.1);
 }
+.header-icon:last-child {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.header-icon {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
