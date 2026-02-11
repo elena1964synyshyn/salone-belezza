@@ -2,7 +2,8 @@
 @import './utils/fonts';
 @import './utils/texts';
 @import './utils/variables';
-@import './utils/base';
+@import './_base';
+@import './utils/mixins';
 @import './components/buttons';
 @import './components/links';
 @import './components/header';
@@ -15,5 +16,3 @@
 @import './layout/section-why-us-section';
 @import './layout/section-procedures';
 @import './layout/footer';
-
-@import './utils/mixins';
