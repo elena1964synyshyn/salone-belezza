@@ -1,8 +1,12 @@
 .section-procedures {
   padding-top: 96px;
 }
-
- 
+.procedures-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 .procedures-card {
   overflow: hidden;
@@ -32,12 +36,6 @@
   );
 }
 
-.procedures-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
 .procedures-list {
   display: flex;
   flex-wrap: nowrap;
