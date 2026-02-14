@@ -2,13 +2,12 @@
   position: relative;
   display: flex;
   gap: 40px;
-}
-
-.about-call-content {
-  display: flex;
-  flex-direction: column;
-  max-width: 683px;
-  margin-top: 40px;
+  &__about-call-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 683px;
+    margin-top: 40px;
+  }
   &__about-call-about {
     font-size: 64px;
     line-height: 1.2;
@@ -23,13 +22,11 @@
   &__accent-about {
     color: var(--color-primary-blue);
   }
-
   &__about-images {
     gap: 16px;
     width: 327px;
     height: 327px;
   }
-
   &__about-images img {
     object-fit: cover;
     border-radius: 50%;
@@ -38,7 +35,6 @@
   &__about-img-women-1 {
     margin-left: 16px;
   }
-
   &__about-img-women {
     margin-left: 192px;
   }
@@ -49,7 +45,6 @@
     font-size: 64px;
     margin: 0 auto 40px;
   }
-
   &__about-call .centered {
     text-align: center;
   }
