@@ -1,4 +1,4 @@
-.section-procedures {
+.procedures-section {
   padding-top: 96px;
 }
 .procedures-container {
@@ -6,6 +6,18 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.procedures-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.format-item {
+  flex-basis: calc((100% - 32px) / 3);
 }
 
 .procedures-card {
@@ -36,15 +48,6 @@
   );
 }
 
-.procedures-list {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 20px;
-  overflow: hidden;
-  flex: 1;
-}
-
 .about-text-procedures {
   position: absolute;
   bottom: 32px;
@@ -56,8 +59,4 @@
   text-align: center;
   padding: 0 20px;
   z-index: 2;
-}
-
-.format-item {
-  flex-basis: calc((100% - 32px) / 3);
 }

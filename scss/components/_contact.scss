@@ -1,6 +1,16 @@
+.contact-section {
+  padding-top: 96px;
+}
+.contact-container {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+  justify-content: center;
+  margin: 0 auto;
+}
 .contact-map {
   flex-shrink: 0;
-  border-radius: 30px;
+  border-radius: 32px;
   gap: 16px;
 }
 
@@ -10,14 +20,6 @@
   object-fit: cover;
 
   border-radius: 32px;
-}
-
-.contact-container {
-  display: flex;
-  gap: 40px;
-  align-items: stretch;
-  justify-content: center;
-  margin: 0 auto;
 }
 
 .contact {
