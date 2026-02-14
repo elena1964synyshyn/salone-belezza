@@ -1,65 +1,65 @@
 .about-call-container {
   position: relative;
   display: flex;
-
   gap: 40px;
-  &__about-call-content {
-    display: flex;
-    flex-direction: column;
-    max-width: 683px;
-    margin-top: 40px;
-    &__about-call-about {
-      font-size: 64px;
-      line-height: 1.2;
-    }
-    &__about-text {
-      font-family: Roboto, sans-serif;
-      color: var(--color-secondary-dark);
-      margin-bottom: 40px;
-      font-size: 22px;
-      line-height: 1.5;
-    }
-    &__accent-about {
-    }
+}
 
-    .about-images {
-      gap: 16px;
-      width: 327px;
-      height: 327px;
-    }
+.about-call-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 683px;
+  margin-top: 40px;
+  &__about-call-about {
+    font-size: 64px;
+    line-height: 1.2;
+  }
+  &__about-text {
+    font-family: Roboto, sans-serif;
+    color: var(--color-secondary-dark);
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  &__accent-about {
+    color: var(--color-primary-blue);
+  }
 
-    .about-images img {
-      object-fit: cover;
-      border-radius: 50%;
-    }
+  &__about-images {
+    gap: 16px;
+    width: 327px;
+    height: 327px;
+  }
 
-    .about-img-women-1 {
-      margin-left: 16px;
-    }
+  &__about-images img {
+    object-fit: cover;
+    border-radius: 50%;
+  }
 
-    .about-img-women {
-      margin-left: 192px;
-    }
+  &__about-img-women-1 {
+    margin-left: 16px;
+  }
 
-    .about-call {
-      color: var(--color-primary-dark);
-      max-width: 570px;
-      font-size: 64px;
-      margin: 0 auto 40px;
-    }
+  &__about-img-women {
+    margin-left: 192px;
+  }
 
-    .about-call .centered {
-      text-align: center;
-    }
+  &__about-call {
+    color: var(--color-primary-dark);
+    max-width: 570px;
+    font-size: 64px;
+    margin: 0 auto 40px;
+  }
 
-    .color-blue {
-      font-size: 64px;
-      font-family: play, sans-serif;
-      font-weight: 700;
+  &__about-call .centered {
+    text-align: center;
+  }
 
-      color: var(--color-primary-dark);
-    }
+  &__color-blue {
+    font-size: 64px;
+    font-family: play, sans-serif;
+    font-weight: 700;
 
+    color: var(--color-primary-dark);
     color: var(--color-primary-blue);
     font-weight: 700;
   }
