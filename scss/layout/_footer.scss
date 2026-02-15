@@ -1,10 +1,17 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
 .footer-nav,
 .footer-address {
   display: flex;
   justify-content: space-between;
   flex-basis: 50%;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .footer {
@@ -29,13 +36,6 @@
   z-index: 1;
 }
 
-.footer-container {
-  display: flex;
-  gap: 40px;
-  position: relative;
-  z-index: 2;
-}
-
 .link-footer {
   padding: 0 0 16px 0;
 }
@@ -52,6 +52,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  flex-grow: 1;
 }
 
 .link-footer {
