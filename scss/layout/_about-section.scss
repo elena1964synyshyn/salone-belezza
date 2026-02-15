@@ -23,21 +23,40 @@
 // &__accent-about {
 //   color: var(--color-primary-blue);
 // }
-.about-images {
-  gap: 16px;
-  width: 327px;
-  height: 327px;
-}
 .about-images img {
   object-fit: cover;
   border-radius: 50%;
 }
-.about-img-women-1 {
-  margin-left: 16px;
+.about-images {
+  gap: 16px;
+  width: 327px;
+  height: 327px;
+  &__about-img-women-1 {
+    margin-left: 16px;
+  }
+  &__about-img-women {
+    margin-left: 192px;
+  }
 }
-.about-img-women {
-  margin-left: 192px;
+.about-stars {
+  position: relative;
+  &__star-1 {
+    position: absolute;
+    top: -320px;
+    right: 120px;
+  }
+  &__star-2 {
+    position: absolute;
+    top: -654px;
+    right: -221px;
+  }
+  &__star-3 {
+    position: absolute;
+    top: -446px;
+    right: -186px;
+  }
 }
+
 .about-call {
   color: var(--color-primary-dark);
   max-width: 570px;
@@ -55,22 +74,4 @@
   color: var(--color-primary-dark);
   color: var(--color-primary-blue);
   font-weight: 700;
-}
-.about-stars {
-  position: relative;
-}
-.star-1 {
-  position: absolute;
-  top: -320px;
-  right: 120px;
-}
-.star-2 {
-  position: absolute;
-  top: -654px;
-  right: -221px;
-}
-.star-3 {
-  position: absolute;
-  top: -446px;
-  right: -186px;
 }
