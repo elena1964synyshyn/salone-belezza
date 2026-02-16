@@ -31,7 +31,7 @@
   &__burger {
     // display: none;
     background: transparent;
-    border: var(--color-secondary-light);
+    border: none;
     cursor: pointer;
     @media (max-width: $bp-desktop) {
       display: block;
