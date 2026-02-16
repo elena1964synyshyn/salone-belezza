@@ -20,21 +20,22 @@
     gap: 40px;
   }
   &__menu {
-    display: flex;
-    gap: 54px;
-    flex-grow: 1;
-    justify-content: center;
-    @media (max-width: $bp-desktop) {
-      display: none;
+    display: none;
+
+    @media (min-width: $bp-desktop) {
+      display: flex;
+      gap: 54px;
+      flex-grow: 1;
+      justify-content: center;
     }
   }
+
   &__burger {
-    // display: none;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    @media (max-width: $bp-desktop) {
-      display: block;
+    @media (min-width: $bp-desktop) {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      display: none;
     }
   }
 }
@@ -44,11 +45,11 @@
   gap: 16px;
   align-items: center;
   &__img {
-    cursor: pointer;
-    opacity: 0.8;
+    display: none;
 
     @media (max-width: $bp-desktop) {
-      display: none;
+      cursor: pointer;
+      opacity: 0.8;
     }
   }
   &__img:hover {
