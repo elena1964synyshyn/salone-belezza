@@ -24,6 +24,18 @@
     gap: 54px;
     flex-grow: 1;
     justify-content: center;
+    @media (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+  &__burger {
+    // display: none;
+    background: transparent;
+    border: var(--color-secondary-light);
+    cursor: pointer;
+    @media (max-width: $bp-desktop) {
+      display: block;
+    }
   }
 }
 
@@ -34,6 +46,10 @@
   &__img {
     cursor: pointer;
     opacity: 0.8;
+
+    @media (max-width: $bp-desktop) {
+      display: none;
+    }
   }
   &__img:hover {
     opacity: 1;
