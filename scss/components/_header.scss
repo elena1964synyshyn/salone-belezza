@@ -33,6 +33,7 @@
   &__burger {
     @media (min-width: $bp-desktop) {
       background: transparent;
+      padding: 0;
       border: none;
       cursor: pointer;
       display: none;

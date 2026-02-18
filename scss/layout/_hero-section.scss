@@ -14,6 +14,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   &__hero {
     flex-direction: column;
     align-items: center;
@@ -30,8 +31,9 @@
   }
   &__title {
     color: var(--color-primary-blue);
-    font-size: 54px;
-    line-height: 0.81;
+    font-size: 154px;
+    text-align: center;
+    line-height: 0.85;
     max-width: 529px;
     font-weight: 700;
     margin-bottom: 40px;
@@ -51,33 +53,33 @@
   }
 }
 
-// .call-hero {
-//   font-family: 'Roboto', serif;
-//   font-size: 12px;
-//   color: var(--color-secondary-dark);
-// }
+.call-hero {
+  font-family: 'Roboto', serif;
+  font-size: 12px;
+  color: var(--color-secondary-dark);
+}
 
-// .hero-servis {
-//   font-family: Play, sans-serif;
-//   color: var(--color-primary-dark);
-//   font-size: 64px;
-//   font-weight: 700;
-//   line-height: 1.5;
-// }
+.hero-servis {
+  font-family: Play, sans-serif;
+  color: var(--color-primary-dark);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.5;
+}
 
-// .hero-call {
-//   color: var(--color-primary-dark);
-//   font-weight: 700;
-// }
+.hero-call {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
 
-// .servis-content {
-//   padding-top: 40px;
-//   font-family: Roboto, sans-serif;
-// }
+.servis-content {
+  padding-top: 40px;
+  font-family: Roboto, sans-serif;
+}
 
-// .hero-title .accent {
-//   color: var(--color-secondary-light);
-//   font-size: 12px;
-//   font-weight: 400;
-//   line-height: 1.5;
-// }
+.hero-title .accent {
+  color: var(--color-secondary-light);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
