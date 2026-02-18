@@ -32,10 +32,12 @@
 
   &__burger {
     @media (min-width: $bp-desktop) {
-      background: transparent;
+      background-color: transparent;
       padding: 0;
       border: none;
-      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      fill: var(--color-primary-light);
       display: none;
     }
   }
@@ -46,11 +48,12 @@
   gap: 16px;
   align-items: center;
   &__img {
-    display: none;
+    display: block;
 
     @media (max-width: $bp-desktop) {
       cursor: pointer;
       opacity: 0.8;
+      display: none;
     }
   }
   &__img:hover {
