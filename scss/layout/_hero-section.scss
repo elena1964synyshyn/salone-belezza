@@ -10,22 +10,26 @@
       rgba(255, 255, 255, 0) 72.78%
     ),
     url('../images/doc-hero.png');
-
+width: auto;
   padding: 150px 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media screen and (min-width: $bp-tablet) {
-    padding: 80px 0;
-    background-position: right center;
-    min-height: 100vh;
-  }
-
   &__hero {
     flex-direction: column;
     align-items: center;
     padding-left: 106px;
+
+    @media screen and (min-width: $bp-tablet) {
+        display: flex;
+  flex-direction: row;
+  align-items: center;      
+  justify-content: center;  
+  height: 100vh;            
+  text-align: center;
+}
+    }
   }
   &__text {
     font-family: Roboto, sans-serif;
@@ -39,7 +43,7 @@
   &__title {
     color: var(--color-primary-blue);
     font-size: 96px;
-    text-align: center;
+    text-align: left;
     line-height: 0.85;
     max-width: 529px;
     font-weight: 700;
@@ -47,7 +51,6 @@
 
     @media screen and (min-width: $bp-tablet) {
       font-size: 140px;
-      text-align: left;
     }
   }
   &__form-text {
