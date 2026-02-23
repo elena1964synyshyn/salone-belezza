@@ -30,4 +30,7 @@
 }
 .about-call {
   text-align: center;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 64px;
+  }
 }

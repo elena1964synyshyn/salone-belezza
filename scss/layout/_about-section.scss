@@ -8,9 +8,14 @@
   flex-direction: column;
   max-width: 683px;
   margin-top: 40px;
+
   &__about-call-about {
-    font-size: 64px;
+    font-size: 32px;
     line-height: 1.2;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+    }
   }
   &__about-text {
     font-family: Roboto, sans-serif;
@@ -20,17 +25,29 @@
     line-height: 1.5;
   }
 }
-// &__accent-about {
-//   color: var(--color-primary-blue);
-// }
+
 .about-images img {
   object-fit: cover;
   border-radius: 50%;
+  display: none;
+  @media screen and (min-width: $bp-desktop) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    img {
+      width: 327px;
+      height: 327px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
 }
 .about-images {
   gap: 16px;
   width: 327px;
   height: 327px;
+
   &__about-img-women-1 {
     margin-left: 16px;
   }
@@ -42,17 +59,17 @@
   position: relative;
   &__star-1 {
     position: absolute;
-    top: -320px;
+    top: 334px;
     right: 120px;
   }
   &__star-2 {
     position: absolute;
-    top: -654px;
+    top: 72px;
     right: -221px;
   }
   &__star-3 {
     position: absolute;
-    top: -446px;
+    top: 304px;
     right: -186px;
   }
 }
