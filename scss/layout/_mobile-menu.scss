@@ -11,4 +11,9 @@
   &.is-open {
     transform: translateX(0);
   }
+  &__btn-close {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+  }
 }
