@@ -3,7 +3,7 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding-left: 106px;
+  padding-left: 0;
 
   @media screen and (min-width: $bp-tablet) {
     align-items: flex-start;
@@ -68,7 +68,7 @@
   color: var(--color-secondary-dark);
 }
 
-.hero-servis {
+.hero-services {
   font-family: Play, sans-serif;
   color: var(--color-primary-dark);
   font-size: 64px;
@@ -81,7 +81,7 @@
   font-weight: 700;
 }
 
-.servis-content {
+.services-content {
   padding-top: 40px;
   font-family: Roboto, sans-serif;
 }
