@@ -13,25 +13,14 @@
     align-items: center;
     gap: 20px;
   }
-
-  &__list {
-    display: flex;
+  .procedures-swiper {
     flex: 1;
-    justify-content: center;
-    gap: 20px;
-
+    min-width: 0;
+  }
+  &__list {
     margin: 0;
     padding: 0;
     list-style: none;
-
-    overflow: hidden;
-  }
-  &__list > li {
-    flex: 0 0 calc((100% - 40px) / 3);
-  }
-
-  &__item {
-    flex: 0 0 calc((100% - 40px) / 3);
   }
 
   &__button {
