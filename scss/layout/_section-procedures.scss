@@ -4,6 +4,7 @@
   &__title {
     text-align: center;
     margin: 0 0 48px;
+    fz64
   }
 
   &__slider {
@@ -29,9 +30,9 @@
     flex: 0 0 calc((100% - 40px) / 3);
   }
 
-  // &__item {
-  //   flex: 0 0 calc((100% - 40px) / 3);
-  // }
+  &__item {
+    flex: 0 0 calc((100% - 40px) / 3);
+  }
 
   &__button {
     display: inline-flex;
@@ -52,10 +53,10 @@
     }
   }
 
-  &__icon {
+  &__arrow-icon {
     fill: var(--color-primary-blue, #2b7fff);
 
-    &--next {
+    &__arrow--next {
       transform: rotate(180deg);
     }
   }

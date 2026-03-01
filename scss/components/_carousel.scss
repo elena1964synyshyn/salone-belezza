@@ -1,5 +1,39 @@
-// .procedures {
-//   &__arrow {
+// // .procedures {
+// //   &__arrow {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: center;
+// //     flex-shrink: 0;
+
+// //     width: 44px;
+// //     height: 44px;
+// //     padding: 0;
+
+// //     background: transparent;
+// //     border: 1px solid var(--color-primary-dark);
+// //     border-radius: 50%;
+// //     cursor: pointer;
+
+// //     &:hover {
+// //       background-color: var(--color-primary-blue);
+// //     }
+
+// //     &:hover .procedures__arrow-icon {
+// //       fill: var(--color-primary-light);
+// //     }
+// //   }
+
+// //   &__arrow-icon {
+// //     fill: var(--color-primary-blue);
+// //   }
+
+// // &__arrow--next .procedures__arrow-icon {
+// //   transform: rotate(180deg);
+// // }
+// // }
+// .carousel-button {
+//   &__arrow--next,
+//   &__arrow--prev {
 //     display: flex;
 //     align-items: center;
 //     justify-content: center;
@@ -22,14 +56,14 @@
 //       fill: var(--color-primary-light);
 //     }
 //   }
+// }
 
-//   &__arrow-icon {
-//     fill: var(--color-primary-blue);
-//   }
-
-//   &__arrow--next .procedures__arrow-icon {
-//     transform: rotate(180deg);
-//   }
+// &__icon {
+//   fill: var(--color-primary-blue);
+//   transform: rotate(180deg);
+// }
+// .carousel-button__arrow--next .carousel-button__icon {
+//   transform: rotate(180deg);
 // }
 .carousel-button {
   &__arrow--next,
@@ -52,16 +86,17 @@
       background-color: var(--color-primary-blue);
     }
 
-    &:hover .procedures__arrow-icon {
+    &:hover .carousel-button__icon {
       fill: var(--color-primary-light);
     }
   }
+
+  &__icon {
+    fill: var(--color-primary-blue);
+  }
 }
 
-.procedures__arrow-icon {
-  fill: var(--color-primary-blue);
-
-  &--next {
-    transform: rotate(180deg);
-  }
+/* повертає тільки праву (next) */
+.carousel-button__arrow--next .carousel-button__icon {
+  transform: rotate(180deg);
 }
