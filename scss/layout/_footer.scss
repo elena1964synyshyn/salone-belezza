@@ -1,4 +1,4 @@
-.footer-container {
+&__container {
   display: flex;
   justify-content: space-between;
 
@@ -7,8 +7,8 @@
   z-index: 2;
 }
 
-.footer-nav,
-.footer-address {
+&__nav,
+&__address {
   display: flex;
   justify-content: space-between;
   flex-basis: 50%;
@@ -25,7 +25,7 @@
   background-position: center;
 }
 
-.footer::before {
+&::before {
   content: '';
   background-image: url('../images/beauty-product.png');
   position: absolute;
@@ -41,8 +41,8 @@
   padding: 0 0 16px 0;
 }
 
-.footer-logo,
-.footer-menu {
+&__logo,
+&__menu {
   flex-grow: 1;
   display: flex;
   flex-direction: column;

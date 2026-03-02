@@ -177,14 +177,14 @@
           Наші <span class="color-blue">процедури</span>
         </h2>
 
-        <div class="procedures__slider ">
-          <button class="carousel-button__arrow carousel-button__arrow--prev" type="button"
+        <div class="procedures__slider">
+          <button class="procedures__button carousel-button__arrow carousel-button__arrow--prev" type="button"
             aria-label="Попередній слайд">
             <svg class="carousel-button__icon" width="16" height="16" aria-hidden="true">
               <use href="./images/arrow.svg#icon-arrow1"></use>
             </svg>
           </button>
-          <div class="swiper procedures-swiper">
+          <div class="procedures__container swiper-container">
             <ul class="procedures__list swiper-wrapper">
               <li class="swiper-slide">
                 <article class="procedure-card">
@@ -227,12 +227,16 @@
                 </article>
               </li>
             </ul>
+            <div class="pagination">
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
 
+            </div>
           </div>
 
-
-
-          <button class="carousel-button__arrow carousel-button__arrow--next" type="button"
+          <button class="procedures__button carousel-button__arrow carousel-button__arrow--next" type="button"
             aria-label="Наступний слайд">
             <svg class="carousel-button__icon carousel-button__icon--next" width="16" height="16" aria-hidden="true">
               <use href="./images/arrow.svg#icon-arrow1"></use>
@@ -301,14 +305,14 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-container">
-        <nav class="footer-nav">
-          <div class="footer-logo">
+      <div class="footer__container">
+        <nav class="footer__nav">
+          <div class="footer__logo">
             <a href="./">
               <img src="./images/logo.svg" alt="логотип beauty zone">
             </a>
           </div>
-          <ul class="footer-menu">
+          <ul class="footer__menu">
             <li><a class="link-footer" href="#about-section">Про нас</a></li>
             <li><a class="link-footer" href="#why-us-section">Чому ми</a></li>
             <li><a class="link-footer" href="#services-section">Наші процедури</a></li>
@@ -396,10 +400,11 @@
   <!-- Скрипти -->
   <script src="./js/modal.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="./js/mobile-menu.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  <script defer src="./js/formats-slider.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./js/formats-slider.js"></script>
+  <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
