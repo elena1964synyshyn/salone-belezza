@@ -183,7 +183,11 @@
   &__title {
     text-align: center;
     margin: 0 0 48px;
-    font-size: 64px;
+    font-size: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+    }
   }
 
   &__slider {

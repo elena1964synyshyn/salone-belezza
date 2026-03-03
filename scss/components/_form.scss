@@ -73,9 +73,13 @@
 .form-terms-link:hover {
   color: var(--color-primary-light);
 }
+.contact-map,
+.contact {
+  margin: 0;
+}
 
 .contact-map img {
-  flex-shrink: 0;
-
+  // flex-shrink: 0;
+  display: block;
   border-radius: 30px;
 }
