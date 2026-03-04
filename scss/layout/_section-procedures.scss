@@ -1,182 +1,3 @@
-// .procedures {
-//   padding-top: 96px;
-
-//   &__title {
-//     text-align: center;
-//     margin: 0 0 48px;
-//     font-size: 64px;
-//   }
-
-//   &__slider {
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     gap: 20px;
-//   }
-//   .procedures-swiper {
-//     flex: 1;
-//     min-width: 0;
-//   }
-//   &__list {
-//     margin: 0;
-//     padding: 0;
-//     list-style: none;
-//   }
-
-//   &__button {
-//     display: inline-flex;
-//     align-items: center;
-//     justify-content: center;
-
-//     width: 44px;
-//     height: 44px;
-//     border: 0;
-//     border-radius: 50%;
-//     background: transparent;
-//     cursor: pointer;
-//     padding: 0;
-
-//     &:focus-visible {
-//       outline: 2px solid var(--color-primary-light);
-//       outline-offset: 2px;
-//     }
-//   }
-
-//   &__arrow-icon {
-//     fill: var(--color-primary-blue, #2b7fff);
-
-//     &__arrow--next {
-//       transform: rotate(180deg);
-//     }
-//   }
-// }
-
-// .procedure-card {
-//   position: relative;
-//   overflow: hidden;
-//   border-radius: 120px 4px 120px 4px;
-//   z-index: 0;
-//   transition: transform 0.3s ease;
-
-//   &:hover {
-//     transform: scale(1.05);
-//   }
-
-//   &::before {
-//     content: '';
-//     position: absolute;
-//     inset: 0;
-//     z-index: 1;
-//     background: linear-gradient(
-//       180.05deg,
-//       rgba(1, 28, 68, 0) 48.53%,
-//       rgba(1, 28, 68, 0.725825) 84.61%,
-//       #011c44 101.39%
-//     );
-//   }
-
-//   &__image {
-//     display: block;
-//     width: 100%;
-//     height: auto;
-//   }
-
-//   &__title {
-//     position: absolute;
-//     left: 50%;
-//     bottom: 32px;
-//     transform: translateX(-50%);
-//     z-index: 2;
-
-//     margin: 0;
-//     padding: 0 20px;
-
-//     color: var(--color-primary-light);
-//     font-size: 22px;
-//     line-height: 1.2;
-//     text-align: center;
-//   }
-// }
-// .procedures {
-//   padding-top: 96px;
-
-//   &__title {
-//     text-align: center;
-//     margin: 0 0 48px;
-//     font-size: 64px;
-//   }
-
-//   &__slider {
-//     display: flex;
-//     align-items: center;
-//     gap: 20px;
-//   }
-
-//   &__list {
-//     margin-bottom: 32px;
-//   }
-
-//   &__container {
-//     overflow: hidden;
-//   }
-
-//   &__button {
-//     display: none;
-
-//     @media screen and (min-width: $bp-tablet) {
-//       display: flex;
-//     }
-//   }
-
-//   .procedure-card {
-//     position: relative;
-//     overflow: hidden;
-//     border-radius: 120px 4px 120px 4px;
-//     z-index: 0;
-//     margin: 0 auto;
-//     width: 320px;
-//     height: 456px;
-
-//     @media screen and (min-width: $bp-tablet) {
-//       width: 344px;
-//     }
-
-//     &::before {
-//       content: '';
-//       position: absolute;
-//       inset: 0;
-//       z-index: 1;
-//       background: linear-gradient(
-//         180.05deg,
-//         rgba(1, 28, 68, 0) 48.53%,
-//         rgba(1, 28, 68, 0.725825) 84.61%,
-//         #011c44 101.39%
-//       );
-//     }
-
-//     &__image {
-//       display: block;
-//       width: 100%;
-//       height: auto;
-//     }
-
-//     &__title {
-//       position: absolute;
-//       left: 50%;
-//       bottom: 32px;
-//       transform: translateX(-50%);
-//       z-index: 2;
-
-//       margin: 0;
-//       padding: 0 20px;
-
-//       color: var(--color-primary-light);
-//       font-size: 22px;
-//       line-height: 1.2;
-//       text-align: center;
-//     }
-//   }
-// }
 .procedures {
   padding-top: 96px;
 
@@ -190,18 +11,38 @@
     }
   }
 
+  /* Стрілки + viewport */
   &__slider {
     display: flex;
     align-items: center;
     gap: 20px;
   }
 
-  &__list {
-    margin-bottom: 32px;
-  }
-
+  /* viewport */
   &__container {
     overflow: hidden;
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* wrapper */
+  &__list.swiper-wrapper {
+    margin: 0 0 32px;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    gap: 0;
+  }
+
+  /* slides */
+  &__list > .swiper-slide {
+    flex: 0 0 auto;
+    height: auto;
+
+    width: auto;
   }
 
   &__button {
@@ -209,6 +50,7 @@
 
     @media screen and (min-width: $bp-tablet) {
       display: flex;
+      flex: 0 0 auto;
     }
   }
 
@@ -217,13 +59,12 @@
     overflow: hidden;
     border-radius: 120px 4px 120px 4px;
     z-index: 0;
-    margin: 0 auto;
-    width: 320px;
-    height: 456px;
 
-    @media screen and (min-width: $bp-tablet) {
-      width: 344px;
-    }
+    margin: 0;
+
+    width: 100%;
+    max-width: 100%;
+    height: 456px;
 
     &::before {
       content: '';
@@ -241,7 +82,8 @@
     &__image {
       display: block;
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
     }
 
     &__title {
@@ -259,5 +101,26 @@
       line-height: 1.2;
       text-align: center;
     }
+  }
+
+  /* pagination під слайдером */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .pagination__button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-secondary-dark);
+    opacity: 0.3;
+  }
+
+  .pagination__button--active {
+    opacity: 1;
+    background-color: var(--color-primary-blue);
   }
 }
