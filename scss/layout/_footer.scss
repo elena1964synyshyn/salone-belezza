@@ -1,9 +1,200 @@
+// $bp-tablet: 768px;
+// $bp-desktop: 1280px;
+
+// .footer {
+//   padding: 56px 0;
+//   position: relative;
+//   background-image: url('../images/background.png');
+//   background-color: var(--color-primary-dark);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   color: #fff;
+
+//   &::before {
+//     content: '';
+//     background-image: url('../images/beauty-product.png');
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     width: 247px;
+//     height: 152px;
+
+//     background-repeat: no-repeat;
+//     z-index: 1;
+//   }
+//   @media screen and (min-width: $bp-tablet) and (max-width: ($bp-desktop - 1px)) {
+//     &::before {
+//       content: none;
+//       display: none;
+//     }
+//   }
+//   @media screen and (min-width: $bp-mobile) {
+//     &::before {
+//       content: none;
+//       display: none;
+//     }
+//   }
+//   &__link,
+//   &__address-link,
+//   &__legal-link,
+//   &__social-link {
+//     color: #fff;
+//     text-decoration: none;
+//     transition: color 0.3s ease;
+
+//     &:hover {
+//       color: var(--color-primary-blue);
+//     }
+//   }
+
+//   &__social-icon {
+//     stroke: #fff;
+//     transition:
+//       stroke 0.3s ease,
+//       transform 0.3s ease;
+//   }
+
+//   &__social-link:hover &__social-icon {
+//     stroke: var(--color-primary-blue);
+//     transform: scale(1.1);
+//   }
+
+//   /* reset lists */
+//   &__menu,
+//   &__address-list,
+//   &__social {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+//   }
+
+//   /* ===== DESKTOP (BASE) ===== */
+//   text-align: left;
+
+//   &__container {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: stretch;
+//     gap: 40px;
+//     position: relative;
+//     z-index: 2;
+//   }
+
+//   &__nav,
+//   &__address {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: flex-start;
+//     flex-basis: 50%;
+//     gap: 20px;
+//   }
+
+//   &__logo,
+//   &__menu {
+//     flex-grow: 1;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
+
+//   &__menu-item {
+//     padding-bottom: 16px;
+//   }
+
+//   &__address-list,
+//   &__legal {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     gap: 16px;
+//   }
+
+//   &__social {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     align-items: center;
+//     gap: 12px;
+//   }
+
+//   &__copyright {
+//     margin: 0;
+//     color: var(--color-secondary-light);
+//     font-size: 13px;
+//     line-height: 1.5;
+//   }
+
+//   /* ===== TABLET (768-1279): 1 колонка + по центру ===== */
+//   @media screen and (min-width: $bp-tablet) and (max-width: ($bp-desktop - 1px)) {
+//     text-align: center;
+
+//     &__container {
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: center;
+//       gap: 24px;
+//     }
+
+//     &__nav,
+//     &__address {
+//       flex-direction: column;
+//       align-items: center;
+//       flex-basis: auto;
+//       gap: 20px;
+//     }
+
+//     &__logo,
+//     &__menu {
+//       align-items: center;
+//     }
+
+//     &__address-list,
+//     &__legal {
+//       align-items: center;
+//     }
+
+//     &__social {
+//       justify-content: center;
+//     }
+//   }
+
+//   @media screen and (max-width: ($bp-tablet - 1px)) {
+//     text-align: center;
+
+//     &__container {
+//       flex-direction: column;
+//       align-items: center;
+//       gap: 24px;
+//     }
+
+//     &__nav,
+//     &__address {
+//       flex-direction: column;
+//       align-items: center;
+//     }
+
+//     &__logo,
+//     &__menu,
+//     &__address-list,
+//     &__legal {
+//       align-items: center;
+//     }
+
+//     &__social {
+//       justify-content: center;
+//     }
+//   }
+// }
 $bp-tablet: 768px;
 $bp-desktop: 1280px;
 
 .footer {
   padding: 56px 0;
   position: relative;
+
   background-image: url('../images/background.png');
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
@@ -11,29 +202,38 @@ $bp-desktop: 1280px;
   background-position: center;
   color: #fff;
 
+  /* =========================
+     Декор beauty-product:
+     ПО ЗАМОВЧУВАННЮ (mobile+tablet) — ВИМКНЕНО
+     УВІМКНЕНО ТІЛЬКИ на desktop (>=1280px)
+     ========================= */
   &::before {
-    content: '';
-    background-image: url('../images/beauty-product.png');
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 247px;
-    height: 152px;
-    background-repeat: no-repeat;
-    z-index: 1;
+    content: none;
+    display: none;
   }
-  @media screen and (min-width: $bp-tablet) and (max-width: ($bp-desktop )) {
+
+  @media screen and (min-width: $bp-desktop) {
     &::before {
-      content: none;
-      display: none;
+      content: '';
+      display: block;
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      width: 247px;
+      height: 152px;
+
+      background-image: url('../images/beauty-product.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right bottom;
+
+      z-index: 1;
+      pointer-events: none;
     }
   }
-  @media screen and (min-width: $bp-mobile) {
-    &::before {
-      content: none;
-      display: none;
-    }
-  }
+
   &__link,
   &__address-link,
   &__legal-link,
@@ -78,7 +278,7 @@ $bp-desktop: 1280px;
     align-items: stretch;
     gap: 40px;
     position: relative;
-    z-index: 2;
+    z-index: 2; /* контент над декором */
   }
 
   &__nav,
@@ -160,6 +360,7 @@ $bp-desktop: 1280px;
     }
   }
 
+  /* ===== MOBILE (<768) ===== */
   @media screen and (max-width: ($bp-tablet - 1px)) {
     text-align: center;
 
