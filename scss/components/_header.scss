@@ -4,9 +4,12 @@
   left: 0;
   right: 0;
   width: 100%;
-  // background: rgba(255, 255, 255, 0.25);
-  // backdrop-filter: blur(10px);
-  z-index: 101;
+
+  @media screen and (min-width: $br-tablet) {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    z-index: 101;
+  }
   &__container {
     display: flex;
     align-items: center;
