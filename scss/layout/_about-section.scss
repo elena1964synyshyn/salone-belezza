@@ -78,32 +78,49 @@
   }
 
   // --- Декор (зірочки) ---
+  //
   .about-stars {
-    position: relative;
-
-    &__star-1 {
-      position: absolute;
-      top: 334px;
-      right: 120px;
-    }
-
-    &__star-2 {
-      position: absolute;
-      top: 72px;
-      right: -221px;
-    }
-
-    &__star-3 {
-      position: absolute;
-      top: 304px;
-      right: -186px;
-    }
+    position: static;
   }
 
-  // --- Колірний акцент (якщо потрібно тільки в цій секції) ---
-  .color-blue {
-    font-family: Play, sans-serif;
-    font-weight: 700;
-    color: var(--color-primary-blue);
+  .about-stars__star-1,
+  .about-stars__star-2,
+  .about-stars__star-3 {
+    position: absolute;
+    z-index: 5;
+    display: block;
+    pointer-events: none;
+  }
+
+  .about-stars__star-1 {
+    top: 334px;
+    right: 333px;
+  }
+
+  .about-stars__star-2 {
+    top: 72px;
+
+    right: 0;
+    transform: translateX(221px);
+  }
+
+  .about-stars__star-3 {
+    top: 304px;
+    right: 0;
+    transform: translateX(186px);
+  }
+  @media screen and (max-width: ($bp-tablet - 1px)) {
+    .about-stars__star-2,
+    .about-stars__star-3 {
+      display: none;
+    }
+
+    .about-stars__star-1 {
+      top: auto;
+      right: 16px;
+      bottom: -24px;
+      left: auto;
+      transform: none;
+    }
   }
 }
