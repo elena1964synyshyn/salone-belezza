@@ -15,7 +15,6 @@ body {
   background-image: url('../images/background-beaty-zone.png');
   background-position: center 912px;
   background-repeat: no-repeat;
-  background-size: 100vh auto;
 
   @media screen and (min-width: $br-tablet) {
     font-size: 18px;
@@ -55,7 +54,8 @@ ul {
   padding: 0;
   list-style: none;
 }
-
+$bp-mobile: 480px;
+$bp-tablet: 768px;
 .section {
   padding: 96px 0;
 }

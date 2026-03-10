@@ -122,21 +122,38 @@ $bp-desktop: 1280px;
 
 /* КАРТА */
 .contact-map {
-  /* mobile + tablet: карта зверху і НА ВСЮ ШИРИНУ ЕКРАНУ (виходить за .container) */
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  // width: 100vw;
+  // margin-left: calc(50% - 50vw);
+  // margin-right: calc(50% - 50vw);
 
-  height: 232px;
-  border-radius: 24px;
-  overflow: hidden;
+  // height: 232px;
+  // border-radius: 24px;
+  // overflow: hidden;
 
-  @media screen and (min-width: $bp-tablet) {
-    height: 500px;
-    border-radius: 32px;
+  // @media screen and (min-width: $bp-tablet) {
+  //   height: 500px;
+  //   border-radius: 32px;
+  // }
+  .contact-map {
+    width: 100%;
   }
 
-  /* desktop: повертаємо в контейнер і робимо поряд з формою */
+  .contact-map iframe {
+    display: block; /* прибирає зайві “пробіли” як у inline-елементів */
+    width: 100%;
+    height: 232px; /* можете змінити під дизайн */
+    border: 0;
+    border-radius: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .contact-map iframe {
+      width: 100%; /* на планшеті 100% */
+      height: 481px; /* або іншу висоту для планшета */
+      border-radius: 24px;
+    }
+  }
+
   @media screen and (min-width: $bp-desktop) {
     width: 605px;
     height: 481px;
@@ -148,12 +165,12 @@ $bp-desktop: 1280px;
   }
 }
 
-.contact-map-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+// .contact-map-img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
 
 /* ФОРМА */
 .contact {
