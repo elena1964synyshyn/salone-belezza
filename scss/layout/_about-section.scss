@@ -109,7 +109,7 @@
     right: 0;
     transform: translateX(186px);
   }
-  @media screen and (max-width: ($bp-tablet - 1px)) {
+  @media screen and (max-width: ($bp-desktop - 1px)) {
     .about-stars__star-2,
     .about-stars__star-3 {
       display: none;
