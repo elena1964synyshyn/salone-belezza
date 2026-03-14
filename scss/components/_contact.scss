@@ -5,10 +5,11 @@ $bp-desktop: 1280px;
   flex-direction: column;
   gap: 24px;
   width: 100%;
+  align-items: center;
 
   // //   /* tablet+ : поруч */
   @media screen and (min-width: $bp-tablet) {
-    // flex-direction: row;
+    flex-direction: row;
     gap: 32px;
     align-items: center;
   }
@@ -16,7 +17,8 @@ $bp-desktop: 1280px;
   // //   /* desktop: фіксуємо однакову висоту обох блоків */
   @media screen and (min-width: $bp-desktop) {
     flex-direction: row;
-    align-items: stretch;
+
+    align-items: center;
   }
 }
 
