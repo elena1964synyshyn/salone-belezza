@@ -1,129 +1,10 @@
-// .procedures {
-//   padding-top: 96px;
-
-//   &__title {
-//     text-align: center;
-//     margin: 0 0 48px;
-//     font-size: 32px;
-
-//     @media screen and (min-width: $bp-tablet) {
-//       font-size: 64px;
-//     }
-//   }
-
-//   /* Стрілки + viewport */
-//   &__slider {
-//     display: flex;
-//     align-items: center;
-//     gap: 20px;
-//   }
-
-//   /* viewport */
-//   &__container {
-//     overflow: hidden;
-//     width: 100%;
-//     min-width: 0;
-//   }
-
-//   /* wrapper */
-//   &__list.swiper-wrapper {
-//     margin: 0 0 32px;
-//     padding: 0;
-//     list-style: none;
-
-//     display: flex;
-//     flex-wrap: nowrap;
-
-//     gap: 0;
-//   }
-
-//   /* slides */
-//   &__list .swiper-slide {
-//     flex: 0 0 auto;
-//     height: auto;
-//   }
-
-//   &__button {
-//     display: none;
-
-//     @media screen and (min-width: $bp-tablet) {
-//       display: flex;
-//       flex: 0 0 auto;
-//     }
-//   }
-
-//   .procedure-card {
-//     position: relative;
-//     overflow: hidden;
-//     border-radius: 120px 4px 120px 4px;
-//     z-index: 0;
-
-//     margin: 0;
-
-//     width: 100%;
-//     max-width: 100%;
-//     height: 456px;
-
-//     &::before {
-//       content: '';
-//       position: absolute;
-//       inset: 0;
-//       z-index: 1;
-//       background: linear-gradient(
-//         180.05deg,
-//         rgba(1, 28, 68, 0) 48.53%,
-//         rgba(1, 28, 68, 0.725825) 84.61%,
-//         #011c44 101.39%
-//       );
-//     }
-
-// &__image {
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
-
-//     &__title {
-//       position: absolute;
-//       left: 50%;
-//       bottom: 32px;
-//       transform: translateX(-50%);
-//       z-index: 2;
-
-//       margin: 0;
-//       padding: 0 20px;
-
-//       color: var(--color-primary-light);
-//       font-size: 22px;
-//       line-height: 1.2;
-//       text-align: center;
-//     }
-//   }
-
-//   /* pagination під слайдером */
-//   .pagination {
-//     display: flex;
-//     justify-content: center;
-//     gap: 16px;
-//     margin-top: 24px;
-//   }
-
-//   .pagination__button {
-//     width: 12px;
-//     height: 12px;
-//     border-radius: 50%;
-//     background-color: var(--color-secondary-dark);
-//     opacity: 0.3;
-//   }
-
-//   .pagination__button--active {
-//     opacity: 1;
-//     background-color: var(--color-primary-blue);
-//   }
-// }
 .procedures {
   padding-top: 96px;
+  &__container.swiper-container {
+    overflow: hidden;
+    width: 100%;
+    min-width: 0;
+  }
 
   &__title {
     text-align: center;
@@ -135,21 +16,18 @@
     }
   }
 
-  /* Стрілки + viewport */
   &__slider {
     display: flex;
     align-items: center;
     gap: 20px;
   }
 
-  /* viewport */
   &__container {
     overflow: hidden;
     width: 100%;
     min-width: 0;
   }
 
-  /* wrapper */
   &__list.swiper-wrapper {
     margin: 0 0 32px;
     padding: 0;
@@ -161,7 +39,6 @@
     gap: 0;
   }
 
-  /* slides */
   &__list .swiper-slide {
     flex: 0 0 auto;
     height: auto;

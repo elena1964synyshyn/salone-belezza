@@ -69,15 +69,15 @@ $bp-desktop: 1280px;
     flex: 1 1 auto;
   }
 
-  // @media screen and (min-width: $bp-desktop) {
-  //   flex: 0 0 auto;
-  //   width: 422px;
-  //   height: 481px;
+  @media screen and (min-width: $bp-desktop) {
+    flex: 0 0 auto;
+    width: 422px;
+    height: 481px;
 
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  // }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 $bp-tablet: 768px;
