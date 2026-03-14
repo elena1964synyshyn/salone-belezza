@@ -1,7 +1,4 @@
 .about-section {
-  @media screen and (max-width: ($bp-desktop - 1px)) {
-    overflow: hidden; // ← тільки на планшеті і мобільному
-  }
   .about-call-content__second-line {
     display: block;
   }
@@ -103,13 +100,12 @@
   .about-stars__star-2 {
     top: 72px;
 
-    right: 0;
     transform: translateX(221px);
   }
 
   .about-stars__star-3 {
     top: 304px;
-    right: 0;
+
     transform: translateX(186px);
   }
   @media screen and (max-width: ($bp-desktop - 1px)) {
