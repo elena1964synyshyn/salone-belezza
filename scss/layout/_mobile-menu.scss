@@ -4,6 +4,8 @@
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100%;
+  display: none;
 
   background-color: var(--color-primary-light);
   transform: translateX(100%);
@@ -13,6 +15,7 @@
   color: var(--color-primary-dark);
 
   &.is-open {
+    display: flex;
     transform: translateX(0);
   }
 
