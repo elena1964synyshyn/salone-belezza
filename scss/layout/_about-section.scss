@@ -1,4 +1,6 @@
 .about-section {
+  position: relative;
+  overflow: hidden;
   .about-call-content__second-line {
     display: block;
   }
@@ -8,6 +10,7 @@
     margin-top: 40px;
     position: relative;
     display: flex;
+    overflow: hidden;
     gap: 40px;
 
     @media screen and (min-width: $bp-tablet) {
@@ -114,7 +117,7 @@
   @media screen and (max-width: ($bp-desktop - 1px)) {
     .about-stars__star-2,
     .about-stars__star-3 {
-      right: 250px;
+      transform: none;
       display: none;
     }
 
