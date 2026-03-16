@@ -102,19 +102,20 @@
 
   .about-stars__star-2 {
     top: 72px;
-
+    right: 212px;
     transform: translateX(221px);
   }
 
   .about-stars__star-3 {
     top: 304px;
+    right: 203px;
 
     transform: translateX(186px);
   }
   @media screen and (max-width: ($bp-desktop - 1px)) {
     .about-stars__star-2,
     .about-stars__star-3 {
-      //right: 250px;
+      right: 250px;
       display: none;
     }
 
